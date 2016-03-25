@@ -1,6 +1,8 @@
 # Sandbin
 
-A super simple code paste bin app to be run on Sandstorm
+> A super simple code paste bin app to be run on Sandstorm
+
+![screenshot](http://i.imgur.com/N75U0DP.png)
 
 Uses codemirror as code parser and syntax highlighter.
 
