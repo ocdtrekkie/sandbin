@@ -1,0 +1,33 @@
+<head>
+  <title>sandbin</title>
+</head>
+
+<body>
+  <h1>Sandbin</h1>
+  {{> pasteOutput}}
+</body>
+
+<template name="pasteOutput">
+  <div>
+    <p>Some lines of text created by {{creatorOf paste}}</p>
+
+    <form class="new-paste">
+      {{#if showCode paste Meteor.loggingIn}}
+        {{> code paste=paste}}
+      {{/if}}
+      <select id="language" name="language">
+        {{#each languages}}
+          <option value="{{this}}"
+            selected={{selectedLanguage paste.language this}}>
+            {{this}}
+          </option>
+        {{/each}}
+      </select>
+      <input type="submit" value="Save"/>
+    </form>
+  </div>
+</template>
+
+<template name="code">
+  {{> CodeMirror id="some-id" name="pasteArea" options=editorOptions code=paste.paste}}
+</template>
