@@ -10,7 +10,7 @@ Uses codemirror as code parser and syntax highlighter.
 # To develop it
 
 ```
-git clone git@github.com/simonv3/sandbin
+git clone git@github.com:simonv3/sandbin.git
 cd sandbin
 meteor
 ```
