@@ -1,0 +1,23 @@
+{
+  "name": "sandbin",
+  "version": "1.0.0",
+  "description": "paste app for sandstorm",
+  "main": "sandbin.js",
+  "dependencies": {
+    "babel-runtime": "^5.8.38"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonv3/sandbin.git"
+  },
+  "author": "simon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonv3/sandbin/issues"
+  },
+  "homepage": "https://github.com/simonv3/sandbin#readme"
+}
